@@ -13,9 +13,9 @@ namespace FunctionalTests
             IWebDriver driver = new ChromeDriver("D:\\WebDrivers\\Chrome");
             driver.Url = "https://pass.rw.by/ru/";
             driver.Manage().Window.Maximize();
-            driver.FindElement(By.XPath("//span[text()='Онлайн-табло']")).Click();
+            driver.FindElement(By.XPath("//span[text()='РћРЅР»Р°Р№РЅ-С‚Р°Р±Р»Рѕ']")).Click();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
-            driver.FindElement(By.XPath("//input[@value='Да']")).Click();
+            driver.FindElement(By.XPath("//input[@value='Р”Р°']")).Click();
             driver.Close();
         }
     }
